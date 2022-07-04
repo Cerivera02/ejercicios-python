@@ -11,17 +11,17 @@ dinero=float(input("Dinero recibido: "))
 if art > dinero:
     
     while art>dinero:
-        print("Aun falta %s de dinero" %(abs(dinero-art)))
+        print("Aun falta %s de dinero" %(round(abs(dinero-art) ,2)))
         dineroQueFalta = float(input("Dinero recibido: "))
         dinero+=dineroQueFalta
 
     print("Gracias por haber comprado en nuestra tienda")
 
     if  art < dinero:
-        print("Su cambio es de %s" %(dinero-art))
+        print("Su cambio es de %s" %(round((dinero-art) ,2)))
 
 elif art < dinero:
-    print("Gracias por su compra, su cambio es %s" %(dinero-art))
+    print("Gracias por su compra, su cambio es %s" %(round(dinero-art ,2)))
 
 elif art == dinero:
     print("Muchas gracias por haber comprado aqui, hasta pronto")
