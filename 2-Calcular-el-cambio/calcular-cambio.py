@@ -15,12 +15,7 @@ if art > dinero:
         dineroQueFalta = float(input("Dinero recibido: "))
         dinero+=dineroQueFalta
 
-    print("Gracias por haber comprado en nuestra tienda")
-
-    if  art < dinero:
-        print("Su cambio es de %s" %(round((dinero-art) ,2)))
-
-elif art < dinero:
+if art < dinero:
     print("Gracias por su compra, su cambio es %s" %(round(dinero-art ,2)))
 
 elif art == dinero:
